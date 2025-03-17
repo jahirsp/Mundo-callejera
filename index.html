@@ -78,18 +78,39 @@
     </header>
 
     <div class="menu-container">
+        <!-- Opción 1: Juego "Campeones de Freestyle" -->
         <div class="game-option" onclick="startFreestyleGame()">
-            <!-- Vista previa del juego "Campeones de Freestyle" -->
             <img src="imagenes/vistaprevia1.png" alt="Vista previa Campeones de Freestyle">
             <span>Campeones de Freestyle</span>
+        </div>
+
+        <!-- Opción 2: Juego "Freestyle Master" -->
+        <div class="game-option" onclick="startFreestyleMaster()">
+            <img src="imagenes/vistaprevia2.png" alt="Vista previa Freestyle Master">
+            <span>Freestyle Master</span>
+        </div>
+
+        <!-- Opción 3: Juego "Desafío Freestyle" -->
+        <div class="game-option" onclick="startFreestyleChallenge()">
+            <img src="imagenes/vistaprevia3.png" alt="Vista previa Desafío Freestyle">
+            <span>Desafío Freestyle</span>
         </div>
     </div>
 
     <script>
         // Función para iniciar el juego "Campeones de Freestyle"
         function startFreestyleGame() {
-            // Redirige al juego "Campeones de Freestyle"
-            window.location.href = 'freestyle_game.html';  // Cambia 'freestyle_game.html' a la ruta correcta
+            window.location.href = 'freestyle_game.html';  // Cambia la ruta según el archivo
+        }
+
+        // Función para iniciar el juego "Freestyle Master"
+        function startFreestyleMaster() {
+            window.location.href = 'freestyle_master.html';  // Cambia la ruta según el archivo
+        }
+
+        // Función para iniciar el juego "Desafío Freestyle"
+        function startFreestyleChallenge() {
+            window.location.href = 'freestyle_challenge.html';  // Cambia la ruta según el archivo
         }
     </script>
 </body>
